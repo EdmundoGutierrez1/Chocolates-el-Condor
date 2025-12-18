@@ -76,7 +76,7 @@
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
-            padding: 1.5rem;
+            padding: 1rem;
         }
         .card-hover:hover .product-img {
             transform: scale(1.1);
@@ -156,12 +156,12 @@
             <!-- Puritos -->
             <div class="bg-white p-4 rounded-[2.5rem] shadow-sm card-hover border border-gray-50 flex flex-col h-full">
                 <div class="product-img-wrapper mb-6 shadow-inner bg-[#fdfdfd]">
-                    <img src="https://images.unsplash.com/photo-1581798459219-318e76aecc7b?auto=format&fit=crop&w=600&q=80" alt="Puritos de Marshmallow" class="product-img">
+                    <img src="https://th.bing.com/th/id/R.8521d7a9512ae3e58f7d55d1534a4ce1?rik=%2bkJ8fyq1v%2fCg0w&riu=http%3a%2f%2fdelcondor.com%2fcdn%2fshop%2ffiles%2fCBFA052D-990A-47ED-9511-5B80BD23FB6D_1200x1200.jpg%3fv%3d1708545006&ehk=9HAW3imyHdw0ffG%2bM2pWGuEJMcs%2bnG6AY20theQyvnI%3d&risl=&pid=ImgRaw&r=0" alt="Puritos" class="product-img">
                 </div>
                 <div class="px-2 flex-grow">
                     <h3 class="font-bold text-xl mb-1 text-[#2C1810]">Puritos</h3>
-                    <p class="text-gray-400 text-xs mb-4 uppercase tracking-widest font-bold">Marshmallow & Chocolate</p>
-                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Nuestros deliciosos marshmallows bañados en chocolate, ahora en varios sabores.</p>
+                    <p class="text-gray-400 text-xs mb-4 uppercase tracking-widest font-bold">Nube & Chocolate</p>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Marshmallows seleccionados con la cobertura más suave y dulce de nuestra casa.</p>
                 </div>
                 <div class="px-2 pb-2 flex justify-between items-center mt-auto">
                     <span class="text-[#2C1810] font-bold text-2xl tracking-tighter">10.00 Bs</span>
@@ -173,7 +173,7 @@
             <div class="bg-white p-4 rounded-[2.5rem] shadow-sm card-hover border border-gray-50 flex flex-col h-full">
                 <div class="product-img-wrapper mb-6 shadow-inner bg-[#fdfdfd] relative">
                     <span class="absolute top-4 right-4 bg-[#D4AF37] text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest z-10">Popular</span>
-                    <img src="https://farmacorp.com/cdn/shop/files/7771718230319_1200x1200.jpg?v=1735844001" alt="Grageas de Maní Cóndor" class="product-img">
+                    <img src="https://farmacorp.com/cdn/shop/files/7771718230319_1200x1200.jpg?v=1735844001" alt="Grageas de Maní" class="product-img">
                 </div>
                 <div class="px-2 flex-grow">
                     <h3 class="font-bold text-xl mb-1 text-[#2C1810]">Grageas de Maní</h3>
@@ -189,11 +189,11 @@
             <!-- Beso de Negro -->
             <div class="bg-white p-4 rounded-[2.5rem] shadow-sm card-hover border border-gray-50 flex flex-col h-full">
                 <div class="product-img-wrapper mb-6 shadow-inner bg-[#fdfdfd]">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl09aglycXFDoaaQgkkMHfgz4adckHcL7I0w&s" alt="Beso de Negro Cóndor" class="product-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl09aglycXFDoaaQgkkMHfgz4adckHcL7I0w&s" alt="Beso de Negro" class="product-img">
                 </div>
                 <div class="px-2 flex-grow">
                     <h3 class="font-bold text-xl mb-1 text-[#2C1810]">Besos de Negro</h3>
-                    <p class="text-gray-400 text-xs mb-4 uppercase tracking-widest font-bold">El Tradicional</p>
+                    <p class="text-gray-400 text-xs mb-4 uppercase tracking-widest font-bold">Corazón de Nube</p>
                     <p class="text-gray-600 text-sm mb-6 leading-relaxed">El contraste perfecto: merengue esponjoso bañado en crujiente chocolate.</p>
                 </div>
                 <div class="px-2 pb-2 flex justify-between items-center mt-auto">
