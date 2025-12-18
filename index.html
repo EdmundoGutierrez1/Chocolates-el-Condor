@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolates Cóndor | Tradición Paceña desde 1960</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cocoa-dark: #2C1810;
+            --cocoa-light: #4A3022;
+            --gold: #D4AF37;
+            --cream: #F9F5F2;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: var(--cocoa-dark);
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.7)), 
+                        url('https://images.unsplash.com/photo-1511381939415-e44015466834?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-gold {
+            background-color: var(--gold);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            background-color: #b8962e;
+            transform: scale(1.05);
+        }
+        .nav-link:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width .3s;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .logo-container img {
+            height: 85px;
+            width: auto;
+            object-fit: contain;
+        }
+        .product-img-wrapper {
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 18rem;
+        }
+        .product-img {
+            transition: transform 0.6s ease;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            padding: 1rem;
+        }
+        .card-hover:hover .product-img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-white shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex items-center">
+                    <a href="#" class="logo-container flex items-center gap-4">
+                        <img src="https://boliviaemprende.com/wp-content/uploads/2013/10/logo_chocolates-condor-bolivia.jpg" alt="Chocolates Cóndor Logo">
+                        <div class="hidden sm:flex flex-col">
+                            <span class="text-lg font-bold tracking-tighter text-[#2C1810] uppercase leading-none">Chocolates Cóndor</span>
+                            <span class="text-[10px] text-[#D4AF37] font-semibold tracking-[0.3em] uppercase">Tradición Paceña</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#productos" class="nav-link font-medium">Nuestros Clásicos</a>
+                    <a href="#nosotros" class="nav-link font-medium">Origen La Paz</a>
+                    <a href="#contacto" class="nav-link font-medium">Contacto</a>
+                </div>
+                <div class="flex items-center space-x-5">
+                    <button class="text-xl hover:text-[#D4AF37] transition-colors"><i class="fas fa-search"></i></button>
+                    <button class="bg-[#2C1810] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#D4AF37] transition-all">Tienda Online</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient h-screen flex items-center justify-center text-center text-white pt-20">
+        <div class="max-w-4xl px-4">
+            <div class="mb-8 flex justify-center">
+                <div class="bg-white p-4 rounded-2xl shadow-2xl">
+                    <img src="https://boliviaemprende.com/wp-content/uploads/2013/10/logo_chocolates-condor-bolivia.jpg" alt="Cóndor" class="h-24 w-auto">
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">El Corazón de La Paz hecho Chocolate</h1>
+            <p class="text-xl md:text-2xl mb-10 font-light opacity-90 max-w-2xl mx-auto">Desde 1960, endulzando los hogares bolivianos con los clásicos de siempre.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#productos" class="btn-gold px-12 py-4 rounded-full text-lg font-semibold shadow-xl">Explorar Productos</a>
+                <a href="#nosotros" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 px-12 py-4 rounded-full text-lg font-semibold transition">Nuestra Historia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section id="productos" class="py-24 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-[#2C1810]">Clásicos Irresistibles</h2>
+            <p class="text-gray-500 max-w-xl mx-auto text-lg">Los productos que han definido nuestra trayectoria y el paladar de generaciones.</p>
+            <div class="w-24 h-1 bg-[#D4AF37] mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <!-- Mosaiquito -->
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-sm card-hover border border-gray-50 flex flex-col h-full">
+                <div class="product-img-wrapper mb-6 shadow-inner bg-[#fdfdfd]">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.FSJqQAKTYuzU0AEXcO_uaAHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mosaiquito" class="product-img">
+                </div>
+                <div class="px-2 flex-grow">
+                    <h3 class="font-bold text-xl mb-1 text-[#2C1810]">Mosaiquitos</h3>
+                    <p class="text-gray-400 text-xs mb-4 uppercase tracking-widest font-bold">El Gran Clásico</p>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">El inconfundible sabor artesanal que ha marcado la historia de los paceños.</p>
+                </div>
+                <div class="px-2 pb-2 flex justify-between items-center mt-auto">
+                    <span class="text-[#2C1810] font-bold text-2xl tracking-tighter">15.00 Bs</span>
+                    <button class="bg-[#2C1810] text-white h-12 w-12 rounded-2xl flex items-center justify-center hover:bg-[#D4AF37] transition-all shadow-lg"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+
+            <!-- Puritos -->
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-sm card-hover border border-gray-50 flex flex-col h-full">
+                <div class="product-img-wrapper mb-6 shadow-inner bg-[#fdfdfd]">
+                    <img src="https://th.bing.com/th/id/R.8521d7a9512ae3e58f7d55d1534a4ce1?rik=%2bkJ8fyq1v%2fCg0w&riu=http%3a%2f%2fdelcondor.com%2fcdn%2fshop%2ffiles%2fCBFA052D-990A-47ED-9511-5B80BD23FB6D_1200x1200.jpg%3fv%3d1708545006&ehk=9HAW3imyHdw0ffG%2bM2pWGuEJMcs%2bnG6AY20theQyvnI%3d&risl=&pid=ImgRaw&r=0" alt="Puritos" class="product-img">
+                </div>
+                <div class="px-2 flex-grow">
+                    <h3 class="font-bold text-xl mb-1 text-[#2C1810]">Puritos</h3>
+                    <p class="text-gray-400 text-xs mb-4 uppercase tracking-widest font-bold">Nube & Chocolate</p>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Marshmallows seleccionados con la cobertura más suave y dulce de nuestra casa.</p>
+                </div>
+                <div class="px-2 pb-2 flex justify-between items-center mt-auto">
+                    <span class="text-[#2C1810] font-bold text-2xl tracking-tighter">10.00 Bs</span>
+                    <button class="bg-[#2C1810] text-white h-12 w-12 rounded-2xl flex items-center justify-center hover:bg-[#D4AF37] transition-all shadow-lg"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+
+            <!-- Grageas de Mani -->
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-sm card-hover border border-gray-50 flex flex-col h-full">
+                <div class="product-img-wrapper mb-6 shadow-inner bg-[#fdfdfd] relative">
+                    <span class="absolute top-4 right-4 bg-[#D4AF37] text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest z-10">Popular</span>
+                    <img src="https://farmacorp.com/cdn/shop/files/7771718230319_1200x1200.jpg?v=1735844001" alt="Grageas de Maní" class="product-img">
+                </div>
+                <div class="px-2 flex-grow">
+                    <h3 class="font-bold text-xl mb-1 text-[#2C1810]">Grageas de Maní</h3>
+                    <p class="text-gray-400 text-xs mb-4 uppercase tracking-widest font-bold">Crocante & Suave</p>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Maní seleccionado y tostado, recubierto por nuestro emblemático chocolate.</p>
+                </div>
+                <div class="px-2 pb-2 flex justify-between items-center mt-auto">
+                    <span class="text-[#2C1810] font-bold text-2xl tracking-tighter">12.00 Bs</span>
+                    <button class="bg-[#2C1810] text-white h-12 w-12 rounded-2xl flex items-center justify-center hover:bg-[#D4AF37] transition-all shadow-lg"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+
+            <!-- Beso de Negro -->
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-sm card-hover border border-gray-50 flex flex-col h-full">
+                <div class="product-img-wrapper mb-6 shadow-inner bg-[#fdfdfd]">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl09aglycXFDoaaQgkkMHfgz4adckHcL7I0w&s" alt="Beso de Negro" class="product-img">
+                </div>
+                <div class="px-2 flex-grow">
+                    <h3 class="font-bold text-xl mb-1 text-[#2C1810]">Besos de Negro</h3>
+                    <p class="text-gray-400 text-xs mb-4 uppercase tracking-widest font-bold">Corazón de Nube</p>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">El contraste perfecto: merengue esponjoso bañado en crujiente chocolate.</p>
+                </div>
+                <div class="px-2 pb-2 flex justify-between items-center mt-auto">
+                    <span class="text-[#2C1810] font-bold text-2xl tracking-tighter">18.00 Bs</span>
+                    <button class="bg-[#2C1810] text-white h-12 w-12 rounded-2xl flex items-center justify-center hover:bg-[#D4AF37] transition-all shadow-lg"><i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nostalgia/Nosotros -->
+    <section id="nosotros" class="bg-[#2C1810] py-24 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="relative z-10">
+                <span class="text-[#D4AF37] font-bold uppercase tracking-[0.4em] text-sm block mb-4">Nuestro Legado</span>
+                <h2 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">Más que chocolate, una historia paceña.</h2>
+                <p class="text-gray-300 text-lg mb-8 leading-relaxed">Desde nuestras primeras creaciones en 1960, Chocolates Cóndor ha sido parte de los momentos más dulces de Bolivia. Elaborados en la altura de La Paz, nuestros chocolates capturan la esencia artesanal que solo la tradición familiar puede ofrecer.</p>
+                <div class="grid grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <span class="text-[#D4AF37] text-4xl font-bold block mb-2">+60</span>
+                        <span class="text-sm text-gray-400 uppercase tracking-widest">Años de Historia</span>
+                    </div>
+                    <div>
+                        <span class="text-[#D4AF37] text-4xl font-bold block mb-2">100%</span>
+                        <span class="text-sm text-gray-400 uppercase tracking-widest">Artesanal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-[#D4AF37]/20 rounded-full blur-3xl"></div>
+                <img src="https://images.unsplash.com/photo-1542691457-cbe4df041eb2?auto=format&fit=crop&w=800&q=80" class="rounded-[3rem] shadow-2xl relative z-10" alt="Artesanía de chocolate">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-white pt-24 pb-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-16 mb-20 text-center md:text-left">
+            <div>
+                <img src="https://boliviaemprende.com/wp-content/uploads/2013/10/logo_chocolates-condor-bolivia.jpg" alt="Logo Cóndor" class="h-20 w-auto mb-8 mx-auto md:mx-0">
+                <p class="text-gray-500 leading-relaxed">Orgullosamente paceños desde 1960. Llevando la tradición y el sabor del mejor chocolate a todo el país.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-8 text-[#2C1810] uppercase tracking-widest">Visítanos</h4>
+                <div class="space-y-4 text-gray-500">
+                    <p class="flex items-start justify-center md:justify-start"><i class="fas fa-map-marker-alt text-[#D4AF37] mt-1 mr-3"></i> La Paz, Bolivia - Casa Matriz</p>
+                    <p class="flex items-center justify-center md:justify-start"><i class="fas fa-phone text-[#D4AF37] mr-3"></i> (+591) 222-XXXXX</p>
+                    <p class="flex items-center justify-center md:justify-start"><i class="fas fa-envelope text-[#D4AF37] mr-3"></i> ventas@chocolatescondor.bo</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-8 text-[#2C1810] uppercase tracking-widest">Conéctate</h4>
+                <div class="flex justify-center md:justify-start space-x-4 mb-8">
+                    <a href="#" class="h-12 w-12 bg-gray-50 text-[#2C1810] rounded-2xl flex items-center justify-center hover:bg-[#D4AF37] hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="h-12 w-12 bg-gray-50 text-[#2C1810] rounded-2xl flex items-center justify-center hover:bg-[#D4AF37] hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="h-12 w-12 bg-gray-50 text-[#2C1810] rounded-2xl flex items-center justify-center hover:bg-[#D4AF37] hover:text-white transition-all"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest leading-loose">Suscríbete para recibir noticias de lanzamientos y promociones exclusivas.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 pt-12 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-gray-400 text-[10px] uppercase tracking-[0.3em]">
+            <p>&copy; 2024 Chocolates Cóndor. Todos los derechos reservados.</p>
+            <div class="flex gap-8 mt-4 md:mt-0">
+                <a href="#" class="hover:text-[#D4AF37]">Términos</a>
+                <a href="#" class="hover:text-[#D4AF37]">Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
